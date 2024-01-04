@@ -1,8 +1,8 @@
+import { Outlet } from "react-router-dom";
 export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>React Router Contacts</h1>
         <div>
           <form id="search-form" role="search">
             <input
@@ -30,7 +30,9 @@ export default function Root() {
           </ul>
         </nav>
       </div>
-      <div id="detail"></div>
+      <div id="detail">
+        <Outlet />
+      </div>
     </>
   );
 }
