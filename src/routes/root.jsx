@@ -1,8 +1,8 @@
 export default function Root() {
   return (
     <>
-      <div className="sidebar">
-        <h1>React ROuter Contacts</h1>
+      <div id="sidebar">
+        <h1>React Router Contacts</h1>
         <div>
           <form id="search-form" role="search">
             <input
@@ -12,7 +12,7 @@ export default function Root() {
               type="search"
               name="q"
             />
-            <div id="search-spinner" aria-hidden hidden={true}></div>
+            <div id="search-spinner" aria-hidden hidden={true} />
             <div className="sr-only" aria-live="polite"></div>
           </form>
           <form method="post">
@@ -22,10 +22,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <a href={`/contacts/1`}>your name</a>
+              <a href={`/contacts/1`}>Your Name</a>
             </li>
             <li>
-              <a href={`/contacts/2`}>your Friend</a>
+              <a href={`/contacts/2`}>Your Friend</a>
             </li>
           </ul>
         </nav>
